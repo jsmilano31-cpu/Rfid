@@ -1,0 +1,8 @@
+{
+  "apiKey": "COPY_PUBLIC_WEB_API_KEY",
+  "authDomain": "YOUR_PROJECT.firebaseapp.com",
+  "projectId": "YOUR_PROJECT",
+  "messagingSenderId": "YOUR_SENDER_ID",
+  "appId": "YOUR_WEB_APP_ID",
+  "vapidKey": "COPY_PUBLIC_WEB_PUSH_CERTIFICATE_KEY"
+}

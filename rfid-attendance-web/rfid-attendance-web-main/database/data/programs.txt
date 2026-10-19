@@ -1,0 +1,39 @@
+CAS — College of Arts and Sciences
+Bachelor of Arts in Communication(ABCOMM)
+Bachelor of Arts in Interdisciplinary Studies (BA-IS)
+Bachelor of Arts in Political Science (ABPO)
+Bachelor of Arts in Psychology (ABPS)
+Bachelor of Science in Biology (BSBIO)
+Bachelor of Science in Psychology (BSPS)
+CBA — Yu An Log College of Business and Accountancy
+Bachelor of Science in Accountancy (BSA)
+Bachelor of Science in Accounting Information System (BSAIS)
+Bachelor of Science in Agribusiness Management (BSAM OR BSAB)
+Bachelor of Science in Entrepreneurship (BSE)
+Bachelor of Science in Management Accounting(BSMA)
+Bachelor of Science in Business Administration, major in Business Economics (BSBA-BE)
+Bachelor of Science in Business Administration, major in Marketing Management (BSBA-MM)
+Bachelor of Science in Business Administration, major in Operations Management (BSBA-OM)
+CCS — College of Computing Studies
+Bachelor of Science in Computer Science BSCS
+Bachelor of Science in Entertainment and Multimedia Computing BSEMC
+Bachelor of Science in Information Technology BSIT
+CED — College of Education
+Bachelor of Elementary Education (BEEd)
+Bachelor of Physical Education(BPEd)
+Bachelor of Secondary Education, major in English(BSEd - english)
+Bachelor of Secondary Education, major in Mathematics(BSEd- math)
+Bachelor of Secondary Education, major in Science(BSEd- Science)
+Bachelor of Secondary Education, major in Social Studies(BSEd- Social- studies)
+Bachelor of Special Needs Education, specializing in Early Childhood Education(BSNed-ECE)
+COE — College of Engineering
+Bachelor of Science in Chemical Engineering (BSChE)
+Bachelor of Science in Computer Engineering (BSCpE)
+Bachelor of Science in Electrical Engineering (BSEE)
+Bachelor of Science in Electronics Engineering BSECE
+Bachelor of Science in Materials Engineering (BSMatE)
+CON — College of Nursing
+Bachelor of Science in Nursing (BSN)
+CTH — College of Tourism and Hospitality
+Bachelor of Science in Hospitality Management (BSHM)
+Bachelor of Science in Tourism Management (BSTM)

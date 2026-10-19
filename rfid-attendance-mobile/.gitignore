@@ -1,0 +1,13 @@
+.env
+.DS_Store
+/app/google-services.json
+firebase-debug*.log
+/sdkconfig-result.log
+/instrumentation-build.log
+Thumbs.db
+.gradle/
+.idea/
+.local/
+.kotlin/
+local.properties
+**/build/

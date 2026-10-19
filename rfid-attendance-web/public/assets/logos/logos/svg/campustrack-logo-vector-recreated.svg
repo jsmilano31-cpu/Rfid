@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900">
+<g fill="none" stroke="#182632" stroke-width="34" stroke-linecap="round">
+<path d="M355 135 C275 220 260 385 355 500"/><path d="M430 180 C375 245 370 355 430 420"/><path d="M500 235 C465 275 465 335 500 375"/>
+<path d="M845 135 C925 220 940 385 845 500"/><path d="M770 180 C825 245 830 355 770 420"/><path d="M700 235 C735 275 735 335 700 375"/>
+</g>
+<circle cx="600" cy="305" r="118" fill="#182632"/>
+<circle cx="570" cy="310" r="45" fill="#F7FAF9"/>
+<path d="M565 305 L610 350 L745 215" fill="none" stroke="#2DB893" stroke-width="42" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M460 545 C465 470 525 430 600 430 C675 430 735 470 740 545 Z" fill="#2DB893" stroke="#182632" stroke-width="34"/>
+<path d="M425 545 H775" stroke="#182632" stroke-width="34" stroke-linecap="round"/>
+<text x="65" y="780" font-family="Arial Rounded MT Bold, Nunito Sans, Arial, sans-serif" font-size="156" font-weight="800" letter-spacing="-6"><tspan fill="#182632">Campus</tspan><tspan fill="#2DB893">Track</tspan></text>
+</svg>

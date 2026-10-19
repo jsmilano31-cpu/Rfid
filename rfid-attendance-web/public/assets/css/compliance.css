@@ -1,0 +1,16 @@
+.compliance-tabs{display:flex;flex-wrap:wrap;gap:5px;width:fit-content;max-width:100%;margin:0 0 22px;padding:5px;border:1px solid var(--line);border-radius:12px;background:var(--surface-soft)}
+.compliance-tabs a{display:block;padding:10px 16px;border-radius:8px;color:var(--muted);font-size:13px;font-weight:700;line-height:1.4;text-decoration:none;transition:background .15s ease,color .15s ease}
+.compliance-tabs a:hover{color:var(--ink);background:var(--surface-hover)}
+.compliance-tabs a[aria-current=page]{color:var(--brand-readable);background:var(--surface);box-shadow:0 1px 4px #0002}
+.compliance-tabs a:focus-visible{outline:3px solid color-mix(in srgb,var(--brand-readable) 45%,transparent);outline-offset:2px}
+.analytics-placeholder{max-width:760px}
+.analytics-placeholder-icon{display:block;width:48px;height:48px;margin:0 auto 16px;color:var(--muted)}
+.analytics-placeholder .button{margin-top:12px}
+@media(max-width:600px){.compliance-tabs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));width:100%}.compliance-tabs a{padding:10px;text-align:center}}
+@media print{
+ .compliance-page{--ink:#172033;--muted:#475467;--surface:#fff;--surface-soft:#f8fafc;--surface-hover:#eef2f6;--line:#d0d5dd;--brand-readable:#0b4ab3;--brand-soft:#eef4ff;--success:#067647;--warning:#b54708;--danger:#b42318;color:var(--ink);background:#fff}
+ .compliance-tabs,.compliance-page .page-header-actions,.compliance-page .data-filter-form,.compliance-page .audit-filter-form,.compliance-page .compliance-row-actions{display:none!important}
+ .compliance-page .card{box-shadow:none;break-inside:auto}
+ .compliance-page thead{display:table-header-group}
+ .compliance-page tr{break-inside:avoid}
+}

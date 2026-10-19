@@ -1,0 +1,1 @@
+<div class="card"><h1>Event unavailable</h1><p>This event may have been removed or is outside your permitted event audience.</p><a class="button button-secondary" href="<?= e(url(\App\Core\Auth::usesAdminArea()?'/admin/?page=events':'/index/?page=events')) ?>">Back to events</a></div>

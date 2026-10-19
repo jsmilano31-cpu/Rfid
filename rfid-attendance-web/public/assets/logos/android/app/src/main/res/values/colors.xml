@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="campustrack_navy">#182632</color>
+    <color name="campustrack_navy_deep">#0E1822</color>
+    <color name="campustrack_teal">#2DB893</color>
+    <color name="campustrack_teal_dark">#26A985</color>
+    <color name="campustrack_off_white">#F7FAF9</color>
+    <color name="campustrack_muted">#66727C</color>
+    <color name="campustrack_background">#F7FAF9</color>
+    <color name="campustrack_surface">#FFFFFF</color>
+    <color name="campustrack_text">#182632</color>
+</resources>

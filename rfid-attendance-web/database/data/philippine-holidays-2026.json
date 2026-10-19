@@ -1,0 +1,32 @@
+{
+  "year": 2026,
+  "verified_on": "2026-10-03",
+  "sources": [
+    "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/7/99678",
+    "https://pia.gov.ph/news/proclamation-no-1189-s-2026-declaring-friday-20-march-2026-a-regular-holiday-throughout-the-country-in-observance-of-eidl-fitr-feast-of-ramadhan/",
+    "https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/7/101531"
+  ],
+  "holidays": [
+    {"date":"2026-01-01","event":"New Year's Day","type":"regular"},
+    {"date":"2026-02-17","event":"Chinese New Year","type":"special_non_working"},
+    {"date":"2026-02-25","event":"EDSA People Power Revolution Anniversary","type":"special_working"},
+    {"date":"2026-03-20","event":"Eid'l Fitr","type":"regular"},
+    {"date":"2026-04-02","event":"Maundy Thursday","type":"regular"},
+    {"date":"2026-04-03","event":"Good Friday","type":"regular"},
+    {"date":"2026-04-04","event":"Black Saturday","type":"special_non_working"},
+    {"date":"2026-04-09","event":"Araw ng Kagitingan","type":"regular"},
+    {"date":"2026-05-01","event":"Labor Day","type":"regular"},
+    {"date":"2026-05-27","event":"Eid'l Adha","type":"regular"},
+    {"date":"2026-06-12","event":"Independence Day","type":"regular"},
+    {"date":"2026-08-21","event":"Ninoy Aquino Day","type":"special_non_working"},
+    {"date":"2026-08-31","event":"National Heroes Day","type":"regular"},
+    {"date":"2026-11-01","event":"All Saints' Day","type":"special_non_working"},
+    {"date":"2026-11-02","event":"All Souls' Day","type":"special_non_working"},
+    {"date":"2026-11-30","event":"Bonifacio Day","type":"regular"},
+    {"date":"2026-12-08","event":"Feast of the Immaculate Conception of Mary","type":"special_non_working"},
+    {"date":"2026-12-24","event":"Christmas Eve","type":"special_non_working"},
+    {"date":"2026-12-25","event":"Christmas Day","type":"regular"},
+    {"date":"2026-12-30","event":"Rizal Day","type":"regular"},
+    {"date":"2026-12-31","event":"Last Day of the Year","type":"special_non_working"}
+  ]
+}

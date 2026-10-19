@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="campustrack_background">#0E1822</color>
+    <color name="campustrack_surface">#111C25</color>
+    <color name="campustrack_text">#F7FAF9</color>
+</resources>

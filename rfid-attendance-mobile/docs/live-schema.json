@@ -1,0 +1,2042 @@
+[
+    {
+        "TABLE_NAME":  "attendance_records",
+        "COLUMN_NAME":  "id",
+        "COLUMN_TYPE":  "bigint(20) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "attendance_records",
+        "COLUMN_NAME":  "attendance_session_id",
+        "COLUMN_TYPE":  "bigint(20) unsigned",
+        "IS_NULLABLE":  "YES"
+    },
+    {
+        "TABLE_NAME":  "attendance_records",
+        "COLUMN_NAME":  "class_offering_id",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "attendance_records",
+        "COLUMN_NAME":  "student_id",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "attendance_records",
+        "COLUMN_NAME":  "attendance_date",
+        "COLUMN_TYPE":  "date",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "attendance_records",
+        "COLUMN_NAME":  "time_in",
+        "COLUMN_TYPE":  "time",
+        "IS_NULLABLE":  "YES"
+    },
+    {
+        "TABLE_NAME":  "attendance_records",
+        "COLUMN_NAME":  "time_out",
+        "COLUMN_TYPE":  "time",
+        "IS_NULLABLE":  "YES"
+    },
+    {
+        "TABLE_NAME":  "attendance_records",
+        "COLUMN_NAME":  "status",
+        "COLUMN_TYPE":  "enum(\u0027Present\u0027,\u0027Late\u0027,\u0027Absent\u0027,\u0027Excused\u0027)",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "attendance_records",
+        "COLUMN_NAME":  "source",
+        "COLUMN_TYPE":  "enum(\u0027rfid\u0027,\u0027manual\u0027,\u0027system\u0027)",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "attendance_records",
+        "COLUMN_NAME":  "recorded_by",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "YES"
+    },
+    {
+        "TABLE_NAME":  "attendance_records",
+        "COLUMN_NAME":  "notes",
+        "COLUMN_TYPE":  "varchar(255)",
+        "IS_NULLABLE":  "YES"
+    },
+    {
+        "TABLE_NAME":  "attendance_records",
+        "COLUMN_NAME":  "correction_reason",
+        "COLUMN_TYPE":  "varchar(255)",
+        "IS_NULLABLE":  "YES"
+    },
+    {
+        "TABLE_NAME":  "attendance_records",
+        "COLUMN_NAME":  "created_at",
+        "COLUMN_TYPE":  "timestamp",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "attendance_records",
+        "COLUMN_NAME":  "updated_at",
+        "COLUMN_TYPE":  "timestamp",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "attendance_sessions",
+        "COLUMN_NAME":  "id",
+        "COLUMN_TYPE":  "bigint(20) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "attendance_sessions",
+        "COLUMN_NAME":  "class_offering_id",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "attendance_sessions",
+        "COLUMN_NAME":  "attendance_date",
+        "COLUMN_TYPE":  "date",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "attendance_sessions",
+        "COLUMN_NAME":  "finalized_at",
+        "COLUMN_TYPE":  "datetime",
+        "IS_NULLABLE":  "YES"
+    },
+    {
+        "TABLE_NAME":  "attendance_sessions",
+        "COLUMN_NAME":  "finalized_by",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "YES"
+    },
+    {
+        "TABLE_NAME":  "attendance_sessions",
+        "COLUMN_NAME":  "created_at",
+        "COLUMN_TYPE":  "timestamp",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "attendance_settings",
+        "COLUMN_NAME":  "id",
+        "COLUMN_TYPE":  "tinyint(3) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "attendance_settings",
+        "COLUMN_NAME":  "grace_period_minutes",
+        "COLUMN_TYPE":  "tinyint(3) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "attendance_settings",
+        "COLUMN_NAME":  "absent_after_minutes",
+        "COLUMN_TYPE":  "smallint(5) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "attendance_settings",
+        "COLUMN_NAME":  "tardies_per_absence",
+        "COLUMN_TYPE":  "tinyint(3) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "attendance_settings",
+        "COLUMN_NAME":  "updated_by",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "YES"
+    },
+    {
+        "TABLE_NAME":  "attendance_settings",
+        "COLUMN_NAME":  "updated_at",
+        "COLUMN_TYPE":  "timestamp",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "audit_logs",
+        "COLUMN_NAME":  "id",
+        "COLUMN_TYPE":  "bigint(20) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "audit_logs",
+        "COLUMN_NAME":  "user_id",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "YES"
+    },
+    {
+        "TABLE_NAME":  "audit_logs",
+        "COLUMN_NAME":  "action",
+        "COLUMN_TYPE":  "varchar(100)",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "audit_logs",
+        "COLUMN_NAME":  "entity_type",
+        "COLUMN_TYPE":  "varchar(100)",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "audit_logs",
+        "COLUMN_NAME":  "entity_id",
+        "COLUMN_TYPE":  "varchar(80)",
+        "IS_NULLABLE":  "YES"
+    },
+    {
+        "TABLE_NAME":  "audit_logs",
+        "COLUMN_NAME":  "details",
+        "COLUMN_TYPE":  "text",
+        "IS_NULLABLE":  "YES"
+    },
+    {
+        "TABLE_NAME":  "audit_logs",
+        "COLUMN_NAME":  "ip_address",
+        "COLUMN_TYPE":  "varchar(45)",
+        "IS_NULLABLE":  "YES"
+    },
+    {
+        "TABLE_NAME":  "audit_logs",
+        "COLUMN_NAME":  "created_at",
+        "COLUMN_TYPE":  "timestamp",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "class_attendance_policies",
+        "COLUMN_NAME":  "class_offering_id",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "class_attendance_policies",
+        "COLUMN_NAME":  "grace_period_minutes",
+        "COLUMN_TYPE":  "tinyint(3) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "class_attendance_policies",
+        "COLUMN_NAME":  "absent_after_minutes",
+        "COLUMN_TYPE":  "smallint(5) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "class_attendance_policies",
+        "COLUMN_NAME":  "tardies_per_absence",
+        "COLUMN_TYPE":  "tinyint(3) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "class_attendance_policies",
+        "COLUMN_NAME":  "updated_by",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "YES"
+    },
+    {
+        "TABLE_NAME":  "class_attendance_policies",
+        "COLUMN_NAME":  "created_at",
+        "COLUMN_TYPE":  "timestamp",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "class_attendance_policies",
+        "COLUMN_NAME":  "updated_at",
+        "COLUMN_TYPE":  "timestamp",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "class_enrollments",
+        "COLUMN_NAME":  "id",
+        "COLUMN_TYPE":  "bigint(20) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "class_enrollments",
+        "COLUMN_NAME":  "class_offering_id",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "class_enrollments",
+        "COLUMN_NAME":  "student_id",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "class_enrollments",
+        "COLUMN_NAME":  "status",
+        "COLUMN_TYPE":  "enum(\u0027enrolled\u0027,\u0027dropped\u0027,\u0027completed\u0027)",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "class_enrollments",
+        "COLUMN_NAME":  "enrolled_at",
+        "COLUMN_TYPE":  "timestamp",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "class_offerings",
+        "COLUMN_NAME":  "id",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "class_offerings",
+        "COLUMN_NAME":  "course_id",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "class_offerings",
+        "COLUMN_NAME":  "section_id",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "class_offerings",
+        "COLUMN_NAME":  "semester_id",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "class_offerings",
+        "COLUMN_NAME":  "room_id",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "YES"
+    },
+    {
+        "TABLE_NAME":  "class_offerings",
+        "COLUMN_NAME":  "status",
+        "COLUMN_TYPE":  "enum(\u0027active\u0027,\u0027completed\u0027,\u0027cancelled\u0027)",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "class_offerings",
+        "COLUMN_NAME":  "created_at",
+        "COLUMN_TYPE":  "timestamp",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "class_offerings",
+        "COLUMN_NAME":  "updated_at",
+        "COLUMN_TYPE":  "timestamp",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "class_schedules",
+        "COLUMN_NAME":  "id",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "class_schedules",
+        "COLUMN_NAME":  "class_offering_id",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "class_schedules",
+        "COLUMN_NAME":  "room_id",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "YES"
+    },
+    {
+        "TABLE_NAME":  "class_schedules",
+        "COLUMN_NAME":  "day_of_week",
+        "COLUMN_TYPE":  "enum(\u0027Monday\u0027,\u0027Tuesday\u0027,\u0027Wednesday\u0027,\u0027Thursday\u0027,\u0027Friday\u0027,\u0027Saturday\u0027,\u0027Sunday\u0027)",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "class_schedules",
+        "COLUMN_NAME":  "start_time",
+        "COLUMN_TYPE":  "time",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "class_schedules",
+        "COLUMN_NAME":  "end_time",
+        "COLUMN_TYPE":  "time",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "class_seat_assignments",
+        "COLUMN_NAME":  "class_offering_id",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "class_seat_assignments",
+        "COLUMN_NAME":  "seat_plan_id",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "class_seat_assignments",
+        "COLUMN_NAME":  "grid_row",
+        "COLUMN_TYPE":  "tinyint(3) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "class_seat_assignments",
+        "COLUMN_NAME":  "grid_column",
+        "COLUMN_TYPE":  "tinyint(3) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "class_seat_assignments",
+        "COLUMN_NAME":  "student_id",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "class_seat_assignments",
+        "COLUMN_NAME":  "assigned_by",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "YES"
+    },
+    {
+        "TABLE_NAME":  "class_seat_assignments",
+        "COLUMN_NAME":  "created_at",
+        "COLUMN_TYPE":  "timestamp",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "class_seat_assignments",
+        "COLUMN_NAME":  "updated_at",
+        "COLUMN_TYPE":  "timestamp",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "courses",
+        "COLUMN_NAME":  "id",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "courses",
+        "COLUMN_NAME":  "department_id",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "YES"
+    },
+    {
+        "TABLE_NAME":  "courses",
+        "COLUMN_NAME":  "course_code",
+        "COLUMN_TYPE":  "varchar(30)",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "courses",
+        "COLUMN_NAME":  "title",
+        "COLUMN_TYPE":  "varchar(150)",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "courses",
+        "COLUMN_NAME":  "units",
+        "COLUMN_TYPE":  "decimal(3,1)",
+        "IS_NULLABLE":  "YES"
+    },
+    {
+        "TABLE_NAME":  "courses",
+        "COLUMN_NAME":  "status",
+        "COLUMN_TYPE":  "enum(\u0027active\u0027,\u0027inactive\u0027)",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "courses",
+        "COLUMN_NAME":  "created_at",
+        "COLUMN_TYPE":  "timestamp",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "courses",
+        "COLUMN_NAME":  "updated_at",
+        "COLUMN_TYPE":  "timestamp",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "departments",
+        "COLUMN_NAME":  "id",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "departments",
+        "COLUMN_NAME":  "code",
+        "COLUMN_TYPE":  "varchar(30)",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "departments",
+        "COLUMN_NAME":  "name",
+        "COLUMN_TYPE":  "varchar(150)",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "departments",
+        "COLUMN_NAME":  "color_key",
+        "COLUMN_TYPE":  "enum(\u0027green\u0027,\u0027yellow\u0027,\u0027grey\u0027,\u0027blue\u0027,\u0027orange\u0027,\u0027red\u0027,\u0027maroon\u0027)",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "departments",
+        "COLUMN_NAME":  "status",
+        "COLUMN_TYPE":  "enum(\u0027active\u0027,\u0027inactive\u0027)",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "departments",
+        "COLUMN_NAME":  "created_at",
+        "COLUMN_TYPE":  "timestamp",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "departments",
+        "COLUMN_NAME":  "updated_at",
+        "COLUMN_TYPE":  "timestamp",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "department_days_off",
+        "COLUMN_NAME":  "department_id",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "department_days_off",
+        "COLUMN_NAME":  "day_of_week",
+        "COLUMN_TYPE":  "enum(\u0027Monday\u0027,\u0027Tuesday\u0027,\u0027Wednesday\u0027,\u0027Thursday\u0027,\u0027Friday\u0027,\u0027Saturday\u0027,\u0027Sunday\u0027)",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "department_days_off",
+        "COLUMN_NAME":  "reason",
+        "COLUMN_TYPE":  "varchar(150)",
+        "IS_NULLABLE":  "YES"
+    },
+    {
+        "TABLE_NAME":  "department_days_off",
+        "COLUMN_NAME":  "created_at",
+        "COLUMN_TYPE":  "timestamp",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "devices",
+        "COLUMN_NAME":  "id",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "devices",
+        "COLUMN_NAME":  "device_code",
+        "COLUMN_TYPE":  "varchar(60)",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "devices",
+        "COLUMN_NAME":  "name",
+        "COLUMN_TYPE":  "varchar(120)",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "devices",
+        "COLUMN_NAME":  "room_id",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "YES"
+    },
+    {
+        "TABLE_NAME":  "devices",
+        "COLUMN_NAME":  "api_key_hash",
+        "COLUMN_TYPE":  "varchar(255)",
+        "IS_NULLABLE":  "YES"
+    },
+    {
+        "TABLE_NAME":  "devices",
+        "COLUMN_NAME":  "status",
+        "COLUMN_TYPE":  "enum(\u0027active\u0027,\u0027inactive\u0027,\u0027maintenance\u0027)",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "devices",
+        "COLUMN_NAME":  "last_seen_at",
+        "COLUMN_TYPE":  "datetime",
+        "IS_NULLABLE":  "YES"
+    },
+    {
+        "TABLE_NAME":  "devices",
+        "COLUMN_NAME":  "created_at",
+        "COLUMN_TYPE":  "timestamp",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "devices",
+        "COLUMN_NAME":  "updated_at",
+        "COLUMN_TYPE":  "timestamp",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "device_scan_logs",
+        "COLUMN_NAME":  "id",
+        "COLUMN_TYPE":  "bigint(20) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "device_scan_logs",
+        "COLUMN_NAME":  "device_id",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "device_scan_logs",
+        "COLUMN_NAME":  "uid",
+        "COLUMN_TYPE":  "varchar(32)",
+        "IS_NULLABLE":  "YES"
+    },
+    {
+        "TABLE_NAME":  "device_scan_logs",
+        "COLUMN_NAME":  "outcome",
+        "COLUMN_TYPE":  "varchar(40)",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "device_scan_logs",
+        "COLUMN_NAME":  "message",
+        "COLUMN_TYPE":  "varchar(255)",
+        "IS_NULLABLE":  "YES"
+    },
+    {
+        "TABLE_NAME":  "device_scan_logs",
+        "COLUMN_NAME":  "class_offering_id",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "YES"
+    },
+    {
+        "TABLE_NAME":  "device_scan_logs",
+        "COLUMN_NAME":  "student_id",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "YES"
+    },
+    {
+        "TABLE_NAME":  "device_scan_logs",
+        "COLUMN_NAME":  "created_at",
+        "COLUMN_TYPE":  "timestamp",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "events",
+        "COLUMN_NAME":  "id",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "events",
+        "COLUMN_NAME":  "title",
+        "COLUMN_TYPE":  "varchar(180)",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "events",
+        "COLUMN_NAME":  "description",
+        "COLUMN_TYPE":  "text",
+        "IS_NULLABLE":  "YES"
+    },
+    {
+        "TABLE_NAME":  "events",
+        "COLUMN_NAME":  "event_date",
+        "COLUMN_TYPE":  "date",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "events",
+        "COLUMN_NAME":  "end_date",
+        "COLUMN_TYPE":  "date",
+        "IS_NULLABLE":  "YES"
+    },
+    {
+        "TABLE_NAME":  "events",
+        "COLUMN_NAME":  "start_time",
+        "COLUMN_TYPE":  "time",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "events",
+        "COLUMN_NAME":  "end_time",
+        "COLUMN_TYPE":  "time",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "events",
+        "COLUMN_NAME":  "venue",
+        "COLUMN_TYPE":  "varchar(180)",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "events",
+        "COLUMN_NAME":  "banner_image_path",
+        "COLUMN_TYPE":  "varchar(255)",
+        "IS_NULLABLE":  "YES"
+    },
+    {
+        "TABLE_NAME":  "events",
+        "COLUMN_NAME":  "attendance_required",
+        "COLUMN_TYPE":  "tinyint(1)",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "events",
+        "COLUMN_NAME":  "check_in_start",
+        "COLUMN_TYPE":  "time",
+        "IS_NULLABLE":  "YES"
+    },
+    {
+        "TABLE_NAME":  "events",
+        "COLUMN_NAME":  "check_in_end",
+        "COLUMN_TYPE":  "time",
+        "IS_NULLABLE":  "YES"
+    },
+    {
+        "TABLE_NAME":  "events",
+        "COLUMN_NAME":  "check_out_required",
+        "COLUMN_TYPE":  "tinyint(1)",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "events",
+        "COLUMN_NAME":  "is_announcement",
+        "COLUMN_TYPE":  "tinyint(1)",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "events",
+        "COLUMN_NAME":  "status",
+        "COLUMN_TYPE":  "enum(\u0027draft\u0027,\u0027scheduled\u0027,\u0027open\u0027,\u0027closed\u0027,\u0027cancelled\u0027)",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "events",
+        "COLUMN_NAME":  "created_by",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "events",
+        "COLUMN_NAME":  "created_at",
+        "COLUMN_TYPE":  "timestamp",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "events",
+        "COLUMN_NAME":  "updated_at",
+        "COLUMN_TYPE":  "timestamp",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "event_attendance",
+        "COLUMN_NAME":  "id",
+        "COLUMN_TYPE":  "bigint(20) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "event_attendance",
+        "COLUMN_NAME":  "event_id",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "event_attendance",
+        "COLUMN_NAME":  "user_id",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "event_attendance",
+        "COLUMN_NAME":  "check_in_at",
+        "COLUMN_TYPE":  "datetime",
+        "IS_NULLABLE":  "YES"
+    },
+    {
+        "TABLE_NAME":  "event_attendance",
+        "COLUMN_NAME":  "check_out_at",
+        "COLUMN_TYPE":  "datetime",
+        "IS_NULLABLE":  "YES"
+    },
+    {
+        "TABLE_NAME":  "event_attendance",
+        "COLUMN_NAME":  "status",
+        "COLUMN_TYPE":  "enum(\u0027Attended\u0027,\u0027Late\u0027,\u0027Absent\u0027,\u0027Excused\u0027,\u0027Incomplete\u0027)",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "event_attendance",
+        "COLUMN_NAME":  "source",
+        "COLUMN_TYPE":  "enum(\u0027rfid\u0027,\u0027manual\u0027,\u0027system\u0027)",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "event_attendance",
+        "COLUMN_NAME":  "recorded_by",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "YES"
+    },
+    {
+        "TABLE_NAME":  "event_attendance",
+        "COLUMN_NAME":  "notes",
+        "COLUMN_TYPE":  "varchar(255)",
+        "IS_NULLABLE":  "YES"
+    },
+    {
+        "TABLE_NAME":  "event_attendance",
+        "COLUMN_NAME":  "created_at",
+        "COLUMN_TYPE":  "timestamp",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "event_attendance",
+        "COLUMN_NAME":  "updated_at",
+        "COLUMN_TYPE":  "timestamp",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "event_images",
+        "COLUMN_NAME":  "id",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "event_images",
+        "COLUMN_NAME":  "event_id",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "event_images",
+        "COLUMN_NAME":  "image_path",
+        "COLUMN_TYPE":  "varchar(255)",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "event_images",
+        "COLUMN_NAME":  "caption",
+        "COLUMN_TYPE":  "varchar(255)",
+        "IS_NULLABLE":  "YES"
+    },
+    {
+        "TABLE_NAME":  "event_images",
+        "COLUMN_NAME":  "display_order",
+        "COLUMN_TYPE":  "int(11)",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "event_images",
+        "COLUMN_NAME":  "created_at",
+        "COLUMN_TYPE":  "timestamp",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "event_participants",
+        "COLUMN_NAME":  "id",
+        "COLUMN_TYPE":  "bigint(20) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "event_participants",
+        "COLUMN_NAME":  "event_id",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "event_participants",
+        "COLUMN_NAME":  "user_id",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "event_participants",
+        "COLUMN_NAME":  "is_required",
+        "COLUMN_TYPE":  "tinyint(1)",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "event_target_groups",
+        "COLUMN_NAME":  "id",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "event_target_groups",
+        "COLUMN_NAME":  "event_id",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "event_target_groups",
+        "COLUMN_NAME":  "target_type",
+        "COLUMN_TYPE":  "enum(\u0027everyone\u0027,\u0027all_students\u0027,\u0027all_teachers\u0027,\u0027all_staff\u0027,\u0027department\u0027,\u0027program\u0027,\u0027section\u0027,\u0027user\u0027)",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "event_target_groups",
+        "COLUMN_NAME":  "target_id",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "YES"
+    },
+    {
+        "TABLE_NAME":  "grades",
+        "COLUMN_NAME":  "id",
+        "COLUMN_TYPE":  "bigint(20) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "grades",
+        "COLUMN_NAME":  "class_offering_id",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "grades",
+        "COLUMN_NAME":  "student_id",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "grades",
+        "COLUMN_NAME":  "prelim",
+        "COLUMN_TYPE":  "decimal(5,2)",
+        "IS_NULLABLE":  "YES"
+    },
+    {
+        "TABLE_NAME":  "grades",
+        "COLUMN_NAME":  "midterm",
+        "COLUMN_TYPE":  "decimal(5,2)",
+        "IS_NULLABLE":  "YES"
+    },
+    {
+        "TABLE_NAME":  "grades",
+        "COLUMN_NAME":  "final",
+        "COLUMN_TYPE":  "decimal(5,2)",
+        "IS_NULLABLE":  "YES"
+    },
+    {
+        "TABLE_NAME":  "grades",
+        "COLUMN_NAME":  "overall",
+        "COLUMN_TYPE":  "decimal(5,2)",
+        "IS_NULLABLE":  "YES"
+    },
+    {
+        "TABLE_NAME":  "grades",
+        "COLUMN_NAME":  "status",
+        "COLUMN_TYPE":  "enum(\u0027draft\u0027,\u0027finalized\u0027)",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "grades",
+        "COLUMN_NAME":  "entered_by",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "grades",
+        "COLUMN_NAME":  "finalized_at",
+        "COLUMN_TYPE":  "datetime",
+        "IS_NULLABLE":  "YES"
+    },
+    {
+        "TABLE_NAME":  "grades",
+        "COLUMN_NAME":  "created_at",
+        "COLUMN_TYPE":  "timestamp",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "grades",
+        "COLUMN_NAME":  "updated_at",
+        "COLUMN_TYPE":  "timestamp",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "grading_settings",
+        "COLUMN_NAME":  "id",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "grading_settings",
+        "COLUMN_NAME":  "has_prelim",
+        "COLUMN_TYPE":  "tinyint(1)",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "grading_settings",
+        "COLUMN_NAME":  "has_midterm",
+        "COLUMN_TYPE":  "tinyint(1)",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "grading_settings",
+        "COLUMN_NAME":  "has_final",
+        "COLUMN_TYPE":  "tinyint(1)",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "grading_settings",
+        "COLUMN_NAME":  "prelim_weight",
+        "COLUMN_TYPE":  "decimal(5,2)",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "grading_settings",
+        "COLUMN_NAME":  "midterm_weight",
+        "COLUMN_TYPE":  "decimal(5,2)",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "grading_settings",
+        "COLUMN_NAME":  "final_weight",
+        "COLUMN_TYPE":  "decimal(5,2)",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "grading_settings",
+        "COLUMN_NAME":  "passing_grade",
+        "COLUMN_TYPE":  "decimal(5,2)",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "grading_settings",
+        "COLUMN_NAME":  "updated_by",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "YES"
+    },
+    {
+        "TABLE_NAME":  "grading_settings",
+        "COLUMN_NAME":  "updated_at",
+        "COLUMN_TYPE":  "timestamp",
+        "IS_NULLABLE":  "YES"
+    },
+    {
+        "TABLE_NAME":  "messages",
+        "COLUMN_NAME":  "id",
+        "COLUMN_TYPE":  "bigint(20) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "messages",
+        "COLUMN_NAME":  "sender_id",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "messages",
+        "COLUMN_NAME":  "subject",
+        "COLUMN_TYPE":  "varchar(180)",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "messages",
+        "COLUMN_NAME":  "body",
+        "COLUMN_TYPE":  "text",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "messages",
+        "COLUMN_NAME":  "is_announcement",
+        "COLUMN_TYPE":  "tinyint(1)",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "messages",
+        "COLUMN_NAME":  "created_at",
+        "COLUMN_TYPE":  "timestamp",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "message_recipients",
+        "COLUMN_NAME":  "id",
+        "COLUMN_TYPE":  "bigint(20) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "message_recipients",
+        "COLUMN_NAME":  "message_id",
+        "COLUMN_TYPE":  "bigint(20) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "message_recipients",
+        "COLUMN_NAME":  "user_id",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "message_recipients",
+        "COLUMN_NAME":  "read_at",
+        "COLUMN_TYPE":  "datetime",
+        "IS_NULLABLE":  "YES"
+    },
+    {
+        "TABLE_NAME":  "permissions",
+        "COLUMN_NAME":  "id",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "permissions",
+        "COLUMN_NAME":  "code",
+        "COLUMN_TYPE":  "varchar(80)",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "permissions",
+        "COLUMN_NAME":  "description",
+        "COLUMN_TYPE":  "varchar(255)",
+        "IS_NULLABLE":  "YES"
+    },
+    {
+        "TABLE_NAME":  "programs",
+        "COLUMN_NAME":  "id",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "programs",
+        "COLUMN_NAME":  "department_id",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "programs",
+        "COLUMN_NAME":  "code",
+        "COLUMN_TYPE":  "varchar(30)",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "programs",
+        "COLUMN_NAME":  "name",
+        "COLUMN_TYPE":  "varchar(150)",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "programs",
+        "COLUMN_NAME":  "status",
+        "COLUMN_TYPE":  "enum(\u0027active\u0027,\u0027inactive\u0027)",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "programs",
+        "COLUMN_NAME":  "created_at",
+        "COLUMN_TYPE":  "timestamp",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "programs",
+        "COLUMN_NAME":  "updated_at",
+        "COLUMN_TYPE":  "timestamp",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "recollections",
+        "COLUMN_NAME":  "id",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "recollections",
+        "COLUMN_NAME":  "title",
+        "COLUMN_TYPE":  "varchar(180)",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "recollections",
+        "COLUMN_NAME":  "type",
+        "COLUMN_TYPE":  "enum(\u0027Recollection\u0027,\u0027Retreat\u0027)",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "recollections",
+        "COLUMN_NAME":  "section_id",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "recollections",
+        "COLUMN_NAME":  "date",
+        "COLUMN_TYPE":  "date",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "recollections",
+        "COLUMN_NAME":  "start_time",
+        "COLUMN_TYPE":  "time",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "recollections",
+        "COLUMN_NAME":  "end_time",
+        "COLUMN_TYPE":  "time",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "recollections",
+        "COLUMN_NAME":  "venue",
+        "COLUMN_TYPE":  "varchar(180)",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "recollections",
+        "COLUMN_NAME":  "facilitator",
+        "COLUMN_TYPE":  "varchar(180)",
+        "IS_NULLABLE":  "YES"
+    },
+    {
+        "TABLE_NAME":  "recollections",
+        "COLUMN_NAME":  "attendance_required",
+        "COLUMN_TYPE":  "tinyint(1)",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "recollections",
+        "COLUMN_NAME":  "status",
+        "COLUMN_TYPE":  "enum(\u0027draft\u0027,\u0027scheduled\u0027,\u0027open\u0027,\u0027closed\u0027,\u0027cancelled\u0027)",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "recollections",
+        "COLUMN_NAME":  "created_by",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "recollections",
+        "COLUMN_NAME":  "created_at",
+        "COLUMN_TYPE":  "timestamp",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "recollections",
+        "COLUMN_NAME":  "updated_at",
+        "COLUMN_TYPE":  "timestamp",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "recollection_attendance",
+        "COLUMN_NAME":  "id",
+        "COLUMN_TYPE":  "bigint(20) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "recollection_attendance",
+        "COLUMN_NAME":  "recollection_id",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "recollection_attendance",
+        "COLUMN_NAME":  "user_id",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "recollection_attendance",
+        "COLUMN_NAME":  "time_in",
+        "COLUMN_TYPE":  "datetime",
+        "IS_NULLABLE":  "YES"
+    },
+    {
+        "TABLE_NAME":  "recollection_attendance",
+        "COLUMN_NAME":  "time_out",
+        "COLUMN_TYPE":  "datetime",
+        "IS_NULLABLE":  "YES"
+    },
+    {
+        "TABLE_NAME":  "recollection_attendance",
+        "COLUMN_NAME":  "status",
+        "COLUMN_TYPE":  "enum(\u0027Attended\u0027,\u0027Late\u0027,\u0027Absent\u0027,\u0027Excused\u0027)",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "recollection_attendance",
+        "COLUMN_NAME":  "source",
+        "COLUMN_TYPE":  "enum(\u0027rfid\u0027,\u0027manual\u0027,\u0027system\u0027)",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "recollection_attendance",
+        "COLUMN_NAME":  "recorded_by",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "YES"
+    },
+    {
+        "TABLE_NAME":  "recollection_attendance",
+        "COLUMN_NAME":  "notes",
+        "COLUMN_TYPE":  "varchar(255)",
+        "IS_NULLABLE":  "YES"
+    },
+    {
+        "TABLE_NAME":  "recollection_attendance",
+        "COLUMN_NAME":  "created_at",
+        "COLUMN_TYPE":  "timestamp",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "recollection_attendance",
+        "COLUMN_NAME":  "updated_at",
+        "COLUMN_TYPE":  "timestamp",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "recollection_participants",
+        "COLUMN_NAME":  "id",
+        "COLUMN_TYPE":  "bigint(20) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "recollection_participants",
+        "COLUMN_NAME":  "recollection_id",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "recollection_participants",
+        "COLUMN_NAME":  "user_id",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "recollection_target_roles",
+        "COLUMN_NAME":  "recollection_id",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "recollection_target_roles",
+        "COLUMN_NAME":  "role_id",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "recollection_target_users",
+        "COLUMN_NAME":  "recollection_id",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "recollection_target_users",
+        "COLUMN_NAME":  "user_id",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "rfid_assignment_history",
+        "COLUMN_NAME":  "id",
+        "COLUMN_TYPE":  "bigint(20) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "rfid_assignment_history",
+        "COLUMN_NAME":  "rfid_card_id",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "rfid_assignment_history",
+        "COLUMN_NAME":  "user_id",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "rfid_assignment_history",
+        "COLUMN_NAME":  "action",
+        "COLUMN_TYPE":  "enum(\u0027assigned\u0027,\u0027replaced\u0027,\u0027deactivated\u0027)",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "rfid_assignment_history",
+        "COLUMN_NAME":  "performed_by",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "rfid_assignment_history",
+        "COLUMN_NAME":  "notes",
+        "COLUMN_TYPE":  "varchar(255)",
+        "IS_NULLABLE":  "YES"
+    },
+    {
+        "TABLE_NAME":  "rfid_assignment_history",
+        "COLUMN_NAME":  "created_at",
+        "COLUMN_TYPE":  "timestamp",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "rfid_cards",
+        "COLUMN_NAME":  "id",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "rfid_cards",
+        "COLUMN_NAME":  "uid",
+        "COLUMN_TYPE":  "varchar(32)",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "rfid_cards",
+        "COLUMN_NAME":  "user_id",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "YES"
+    },
+    {
+        "TABLE_NAME":  "rfid_cards",
+        "COLUMN_NAME":  "status",
+        "COLUMN_TYPE":  "enum(\u0027active\u0027,\u0027inactive\u0027,\u0027replaced\u0027)",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "rfid_cards",
+        "COLUMN_NAME":  "assigned_at",
+        "COLUMN_TYPE":  "datetime",
+        "IS_NULLABLE":  "YES"
+    },
+    {
+        "TABLE_NAME":  "rfid_cards",
+        "COLUMN_NAME":  "created_at",
+        "COLUMN_TYPE":  "timestamp",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "rfid_cards",
+        "COLUMN_NAME":  "updated_at",
+        "COLUMN_TYPE":  "timestamp",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "rfid_registration_requests",
+        "COLUMN_NAME":  "id",
+        "COLUMN_TYPE":  "bigint(20) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "rfid_registration_requests",
+        "COLUMN_NAME":  "request_token",
+        "COLUMN_TYPE":  "char(64)",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "rfid_registration_requests",
+        "COLUMN_NAME":  "user_id",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "rfid_registration_requests",
+        "COLUMN_NAME":  "device_id",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "rfid_registration_requests",
+        "COLUMN_NAME":  "requested_by",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "rfid_registration_requests",
+        "COLUMN_NAME":  "uid",
+        "COLUMN_TYPE":  "varchar(32)",
+        "IS_NULLABLE":  "YES"
+    },
+    {
+        "TABLE_NAME":  "rfid_registration_requests",
+        "COLUMN_NAME":  "status",
+        "COLUMN_TYPE":  "enum(\u0027pending\u0027,\u0027captured\u0027,\u0027completed\u0027,\u0027cancelled\u0027,\u0027expired\u0027)",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "rfid_registration_requests",
+        "COLUMN_NAME":  "expires_at",
+        "COLUMN_TYPE":  "datetime",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "rfid_registration_requests",
+        "COLUMN_NAME":  "captured_at",
+        "COLUMN_TYPE":  "datetime",
+        "IS_NULLABLE":  "YES"
+    },
+    {
+        "TABLE_NAME":  "rfid_registration_requests",
+        "COLUMN_NAME":  "completed_at",
+        "COLUMN_TYPE":  "datetime",
+        "IS_NULLABLE":  "YES"
+    },
+    {
+        "TABLE_NAME":  "rfid_registration_requests",
+        "COLUMN_NAME":  "created_at",
+        "COLUMN_TYPE":  "timestamp",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "roles",
+        "COLUMN_NAME":  "id",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "roles",
+        "COLUMN_NAME":  "name",
+        "COLUMN_TYPE":  "varchar(80)",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "roles",
+        "COLUMN_NAME":  "description",
+        "COLUMN_TYPE":  "varchar(255)",
+        "IS_NULLABLE":  "YES"
+    },
+    {
+        "TABLE_NAME":  "roles",
+        "COLUMN_NAME":  "created_at",
+        "COLUMN_TYPE":  "timestamp",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "roles",
+        "COLUMN_NAME":  "updated_at",
+        "COLUMN_TYPE":  "timestamp",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "role_permissions",
+        "COLUMN_NAME":  "role_id",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "role_permissions",
+        "COLUMN_NAME":  "permission_id",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "rooms",
+        "COLUMN_NAME":  "id",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "rooms",
+        "COLUMN_NAME":  "room_code",
+        "COLUMN_TYPE":  "varchar(40)",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "rooms",
+        "COLUMN_NAME":  "room_name",
+        "COLUMN_TYPE":  "varchar(120)",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "rooms",
+        "COLUMN_NAME":  "building",
+        "COLUMN_TYPE":  "varchar(120)",
+        "IS_NULLABLE":  "YES"
+    },
+    {
+        "TABLE_NAME":  "rooms",
+        "COLUMN_NAME":  "floor",
+        "COLUMN_TYPE":  "varchar(30)",
+        "IS_NULLABLE":  "YES"
+    },
+    {
+        "TABLE_NAME":  "rooms",
+        "COLUMN_NAME":  "status",
+        "COLUMN_TYPE":  "enum(\u0027active\u0027,\u0027inactive\u0027)",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "rooms",
+        "COLUMN_NAME":  "created_at",
+        "COLUMN_TYPE":  "timestamp",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "rooms",
+        "COLUMN_NAME":  "updated_at",
+        "COLUMN_TYPE":  "timestamp",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "room_seat_plans",
+        "COLUMN_NAME":  "id",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "room_seat_plans",
+        "COLUMN_NAME":  "room_id",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "room_seat_plans",
+        "COLUMN_NAME":  "name",
+        "COLUMN_TYPE":  "varchar(120)",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "room_seat_plans",
+        "COLUMN_NAME":  "row_count",
+        "COLUMN_TYPE":  "tinyint(3) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "room_seat_plans",
+        "COLUMN_NAME":  "column_count",
+        "COLUMN_TYPE":  "tinyint(3) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "room_seat_plans",
+        "COLUMN_NAME":  "based_on_preset_id",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "YES"
+    },
+    {
+        "TABLE_NAME":  "room_seat_plans",
+        "COLUMN_NAME":  "updated_by",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "room_seat_plans",
+        "COLUMN_NAME":  "created_at",
+        "COLUMN_TYPE":  "timestamp",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "room_seat_plans",
+        "COLUMN_NAME":  "updated_at",
+        "COLUMN_TYPE":  "timestamp",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "room_seat_plan_cells",
+        "COLUMN_NAME":  "seat_plan_id",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "room_seat_plan_cells",
+        "COLUMN_NAME":  "grid_row",
+        "COLUMN_TYPE":  "tinyint(3) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "room_seat_plan_cells",
+        "COLUMN_NAME":  "grid_column",
+        "COLUMN_TYPE":  "tinyint(3) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "room_seat_plan_cells",
+        "COLUMN_NAME":  "cell_type",
+        "COLUMN_TYPE":  "enum(\u0027student_seat\u0027,\u0027teacher_table\u0027,\u0027label\u0027)",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "room_seat_plan_cells",
+        "COLUMN_NAME":  "label",
+        "COLUMN_TYPE":  "varchar(80)",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "room_seat_plan_cells",
+        "COLUMN_NAME":  "assigned_student_id",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "YES"
+    },
+    {
+        "TABLE_NAME":  "room_seat_plan_cells",
+        "COLUMN_NAME":  "occupied_at",
+        "COLUMN_TYPE":  "datetime",
+        "IS_NULLABLE":  "YES"
+    },
+    {
+        "TABLE_NAME":  "school_years",
+        "COLUMN_NAME":  "id",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "school_years",
+        "COLUMN_NAME":  "name",
+        "COLUMN_TYPE":  "varchar(30)",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "school_years",
+        "COLUMN_NAME":  "starts_on",
+        "COLUMN_TYPE":  "date",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "school_years",
+        "COLUMN_NAME":  "ends_on",
+        "COLUMN_TYPE":  "date",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "school_years",
+        "COLUMN_NAME":  "status",
+        "COLUMN_TYPE":  "enum(\u0027upcoming\u0027,\u0027active\u0027,\u0027closed\u0027)",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "seat_plan_presets",
+        "COLUMN_NAME":  "id",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "seat_plan_presets",
+        "COLUMN_NAME":  "name",
+        "COLUMN_TYPE":  "varchar(120)",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "seat_plan_presets",
+        "COLUMN_NAME":  "row_count",
+        "COLUMN_TYPE":  "tinyint(3) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "seat_plan_presets",
+        "COLUMN_NAME":  "column_count",
+        "COLUMN_TYPE":  "tinyint(3) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "seat_plan_presets",
+        "COLUMN_NAME":  "visibility",
+        "COLUMN_TYPE":  "enum(\u0027campus\u0027,\u0027personal\u0027)",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "seat_plan_presets",
+        "COLUMN_NAME":  "created_by",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "seat_plan_presets",
+        "COLUMN_NAME":  "created_at",
+        "COLUMN_TYPE":  "timestamp",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "seat_plan_presets",
+        "COLUMN_NAME":  "updated_at",
+        "COLUMN_TYPE":  "timestamp",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "seat_plan_preset_cells",
+        "COLUMN_NAME":  "preset_id",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "seat_plan_preset_cells",
+        "COLUMN_NAME":  "grid_row",
+        "COLUMN_TYPE":  "tinyint(3) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "seat_plan_preset_cells",
+        "COLUMN_NAME":  "grid_column",
+        "COLUMN_TYPE":  "tinyint(3) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "seat_plan_preset_cells",
+        "COLUMN_NAME":  "cell_type",
+        "COLUMN_TYPE":  "enum(\u0027student_seat\u0027,\u0027teacher_table\u0027,\u0027label\u0027)",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "seat_plan_preset_cells",
+        "COLUMN_NAME":  "label",
+        "COLUMN_TYPE":  "varchar(80)",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "sections",
+        "COLUMN_NAME":  "id",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "sections",
+        "COLUMN_NAME":  "program_id",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "sections",
+        "COLUMN_NAME":  "name",
+        "COLUMN_TYPE":  "varchar(80)",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "sections",
+        "COLUMN_NAME":  "year_level",
+        "COLUMN_TYPE":  "tinyint(3) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "sections",
+        "COLUMN_NAME":  "section_code",
+        "COLUMN_TYPE":  "varchar(10)",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "sections",
+        "COLUMN_NAME":  "status",
+        "COLUMN_TYPE":  "enum(\u0027active\u0027,\u0027inactive\u0027)",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "sections",
+        "COLUMN_NAME":  "created_at",
+        "COLUMN_TYPE":  "timestamp",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "sections",
+        "COLUMN_NAME":  "updated_at",
+        "COLUMN_TYPE":  "timestamp",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "semesters",
+        "COLUMN_NAME":  "id",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "semesters",
+        "COLUMN_NAME":  "school_year_id",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "semesters",
+        "COLUMN_NAME":  "name",
+        "COLUMN_TYPE":  "varchar(60)",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "semesters",
+        "COLUMN_NAME":  "starts_on",
+        "COLUMN_TYPE":  "date",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "semesters",
+        "COLUMN_NAME":  "ends_on",
+        "COLUMN_TYPE":  "date",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "semesters",
+        "COLUMN_NAME":  "status",
+        "COLUMN_TYPE":  "enum(\u0027upcoming\u0027,\u0027active\u0027,\u0027closed\u0027)",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "teacher_assignments",
+        "COLUMN_NAME":  "id",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "teacher_assignments",
+        "COLUMN_NAME":  "class_offering_id",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "teacher_assignments",
+        "COLUMN_NAME":  "teacher_id",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "teacher_assignments",
+        "COLUMN_NAME":  "assigned_at",
+        "COLUMN_TYPE":  "timestamp",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "teacher_time_off",
+        "COLUMN_NAME":  "id",
+        "COLUMN_TYPE":  "bigint(20) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "teacher_time_off",
+        "COLUMN_NAME":  "teacher_id",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "teacher_time_off",
+        "COLUMN_NAME":  "starts_on",
+        "COLUMN_TYPE":  "date",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "teacher_time_off",
+        "COLUMN_NAME":  "ends_on",
+        "COLUMN_TYPE":  "date",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "teacher_time_off",
+        "COLUMN_NAME":  "reason",
+        "COLUMN_TYPE":  "varchar(255)",
+        "IS_NULLABLE":  "YES"
+    },
+    {
+        "TABLE_NAME":  "teacher_time_off",
+        "COLUMN_NAME":  "status",
+        "COLUMN_TYPE":  "enum(\u0027active\u0027,\u0027cancelled\u0027)",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "teacher_time_off",
+        "COLUMN_NAME":  "created_by",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "teacher_time_off",
+        "COLUMN_NAME":  "created_at",
+        "COLUMN_TYPE":  "timestamp",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "teacher_time_off",
+        "COLUMN_NAME":  "updated_at",
+        "COLUMN_TYPE":  "timestamp",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "users",
+        "COLUMN_NAME":  "id",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "users",
+        "COLUMN_NAME":  "school_id",
+        "COLUMN_TYPE":  "varchar(40)",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "users",
+        "COLUMN_NAME":  "first_name",
+        "COLUMN_TYPE":  "varchar(80)",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "users",
+        "COLUMN_NAME":  "middle_name",
+        "COLUMN_TYPE":  "varchar(80)",
+        "IS_NULLABLE":  "YES"
+    },
+    {
+        "TABLE_NAME":  "users",
+        "COLUMN_NAME":  "last_name",
+        "COLUMN_TYPE":  "varchar(80)",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "users",
+        "COLUMN_NAME":  "email",
+        "COLUMN_TYPE":  "varchar(190)",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "users",
+        "COLUMN_NAME":  "password_hash",
+        "COLUMN_TYPE":  "varchar(255)",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "users",
+        "COLUMN_NAME":  "role_id",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "users",
+        "COLUMN_NAME":  "department_id",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "YES"
+    },
+    {
+        "TABLE_NAME":  "users",
+        "COLUMN_NAME":  "program_id",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "YES"
+    },
+    {
+        "TABLE_NAME":  "users",
+        "COLUMN_NAME":  "section_id",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "YES"
+    },
+    {
+        "TABLE_NAME":  "users",
+        "COLUMN_NAME":  "profile_image_path",
+        "COLUMN_TYPE":  "varchar(255)",
+        "IS_NULLABLE":  "YES"
+    },
+    {
+        "TABLE_NAME":  "users",
+        "COLUMN_NAME":  "status",
+        "COLUMN_TYPE":  "enum(\u0027active\u0027,\u0027inactive\u0027)",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "users",
+        "COLUMN_NAME":  "created_at",
+        "COLUMN_TYPE":  "timestamp",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "users",
+        "COLUMN_NAME":  "updated_at",
+        "COLUMN_TYPE":  "timestamp",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "user_roles",
+        "COLUMN_NAME":  "user_id",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "user_roles",
+        "COLUMN_NAME":  "role_id",
+        "COLUMN_TYPE":  "int(10) unsigned",
+        "IS_NULLABLE":  "NO"
+    },
+    {
+        "TABLE_NAME":  "user_roles",
+        "COLUMN_NAME":  "assigned_at",
+        "COLUMN_TYPE":  "timestamp",
+        "IS_NULLABLE":  "NO"
+    }
+]

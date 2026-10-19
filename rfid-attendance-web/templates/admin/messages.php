@@ -1,0 +1,4 @@
+<?php $mailComposeId = 'messages-compose'; require BASE_PATH . '/templates/partials/mailbox.php'; ?>
+<details class="mail-delivery-log"><summary>Message delivery log</summary>
+<section class="section section-scroll-target" id="messages-sent" data-section-target><div class="section-heading"><h2>Sent messages</h2></div><div class="table-wrap"><table><thead><tr><th>Subject</th><th>Sender</th><th>Recipients</th><th>Type</th><th>Sent</th></tr></thead><tbody><?php foreach ($messages as $message): ?><tr><td><strong><?= e($message['subject']) ?></strong><br><span class="muted"><?= e(mb_strimwidth($message['body'], 0, 90, '…')) ?></span></td><td><?= e($message['sender_name']) ?></td><td><?= e($message['recipient_count']) ?></td><td><?= $message['is_announcement'] ? 'Announcement' : 'Message' ?></td><td><?= e(format_datetime($message['created_at'])) ?></td></tr><?php endforeach; ?></tbody></table></div></section>
+</details>

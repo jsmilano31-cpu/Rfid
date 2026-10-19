@@ -1,0 +1,18 @@
+:root {
+  --campustrack-navy: #182632;
+  --campustrack-navy-deep: #0E1822;
+  --campustrack-teal: #2DB893;
+  --campustrack-teal-dark: #26A985;
+  --campustrack-off-white: #F7FAF9;
+  --campustrack-muted: #66727C;
+  --campustrack-surface: #FFFFFF;
+  --campustrack-text: #182632;
+  --campustrack-background: #F7FAF9;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --campustrack-surface: #111C25;
+    --campustrack-text: #F7FAF9;
+    --campustrack-background: #0E1822;
+  }
+}

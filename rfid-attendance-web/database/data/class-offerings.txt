@@ -1,0 +1,537 @@
+2DA - 2D Animation
+ABMB1 - Accounting for Non-accountants
+ACCT101 - Basic Accounting (Basic Corporate Accounting - SE and FS Presentation)
+ACCT121 - Crafting Notes to Financial Statements
+ACCT203 - Intermediate Accounting 3 (Acctg Standards and Reporting)
+ACCT402 - Auditing and Assurance 2
+ACCT501 - Cost Accounting and Control
+ACCT601 - Advanced Accounting 1 - Acctg for Special Transactions
+ACCT702 - Accountancy Research
+ACCT901 - Accounting Internship
+AGR116 - Fisheries
+AGRIB101 - Fundamentals of Agribusiness
+AGRIB102 - Introduction to Animal Science
+AGRIB103 - Fundamentals of Crop Science
+AGRIB104 - Livestock and Poultry Production
+AGRIB106 - Crop Protection
+AGRIB107 - Soil Science and Management
+AGRIB108 - Agricultural Engineering
+AGRIB111 - Special Problem/Thesis/Field Study
+AGRIB113 - Agricultural Extension
+AGRIBEL2 - Elective 2
+AGRIBEL3 - Elective 3
+AGRICPRAC - Internship
+AIS101 - Systems Analysis and Design
+AIS102 - Managing Information and Technology
+AIS105 - Data Warehousing and Management
+AIS702 - Accounting Information System Research
+AIS801 - Accounting Information System Internship
+ARTAP - Art Appreciation
+BA100 - Business Analytics
+BA102 - Business Analytics 2
+BA103 - Prof. Elective 2 - Business Analytics 3
+BA104 - Prof. Elective 3 - Business Analytics 4
+BAPRAC - Practicum
+BBIO101A - General Botany Lecture
+BBIO101L - General Botany Laboratory
+BBIO102A - General Zoology Lecture
+BBIO102L - General Zoology Laboratory
+BBIO103A - Systematics Lecture
+BBIO103L - Systematics Laboratory
+BBIO104A2 - Chemical Biology 2 Lecture (Organic Molecules)
+BBIO104C - Natural Science Elective 1 (Organic Molecules)
+BBIO104L2 - Chemical Biology 2 Laboratory (Organic Molecules)
+BBIO105 - Statistical Biology
+BBIO107A - General Microbiology Lecture
+BBIO107L - General Microbiology Laboratory
+BBIO109B - Natural Science Electives 3 (Biomolecules)
+BBIO113A - General Physiology Lecture
+BBIO113L - General Physiology Laboratory
+BBIO115A - Developmental Biology Lecture
+BBIO115L - Developmental Biology Laboratory
+BBIO117 - Thesis 1
+BBIO119 - Thesis 3
+BBIO203 - Plant Physiology
+BBIO205 - Medical Microbiology and Parasitology
+BBIO206 - Human Anatomy and Physiology
+BBIO305 - Human Genetics
+BCHEM - Biochemistry
+BEE200 - Basic Electrical and Electronics Engineering
+BEE301 - Basic Electrical Engineering
+BIOPRAC - Practicum
+BLOGIC - Business Logic
+BMACRO - Basic Macroeconomics
+BMGT1 - Prin of Business Org & Mgt
+BMICRO - Basic Micro Economics
+BSTAT - Business Stat With Demo
+CACHE - Computer Applications in ChE
+CC101 - Introduction to Computing
+CC102 - Computer Programming 1
+CC104 - Data Structures and Algorithms
+CC105 - Information Management
+CC106 - Cloud Based Application Development
+CED101 - Chemical Engineering Design 1
+CED101L - Chemical Engineering Lab 2
+CFP101 - Computer Fundamentals and Programming
+CHM101E - Chemistry for Engineers (Lec)
+CHM101EL - Chemistry for Engineers (Lab)
+COMELECT5 - SS/Humanities Electives 1
+COMLAW1 - Law on Obligations and Contracts
+COMLAW2 - Negotiable Instruments
+COMLAW3 - Business Organizations
+COMLAW5 - Regulatory Framework and Legal Business Issues
+COMM103A - Communication, Culture and Society
+COMM107A - Radio Principles and Practices
+COMM108A - Advertising Principles and Practices
+COMM109A - Communication Planning
+COMM114A - Thesis/Special Project 1
+COMM116A - Development Communication
+COMM117A - Internship
+COMM207 - Film Appreciation
+COMM211 - Introduction to Theatre Arts
+COMM215 - Multimedia Storytelling
+COMMELECT3A - Communication Elective 3A
+COMMELECT3B - Communication Elective 3B
+COMMELECT4A - Communication Elective 4A
+COMMELECT4B - Communication Elective 4B
+COMPF - Computing Fundamentals
+CPETE301 - Software Development 1
+CPETE401 - Software Development 3
+CPL101L - Chemical Process Lab
+CSE301B - CS Elective 1 Technopreneurship
+CSP211 - Automata Theory and Formal Languages
+CSP212A - 3D Animation
+CSP213 - Game Programming 2 Advance Game Design and Development
+CSP218A - Internship
+CSP219 - Networks and Communications
+CSP220 - Thesis 2
+CSP221A - Artificial Intelligence
+CSP222A - Data Science
+CTH101 - Macro Perspective of Tourism and Hospitality
+CTH102 - Risk Management as Applied To Safety, Security and Sanitation
+CTH103 - Philippine Tourism, Culture, and Geography
+CTH105 - Quality Service Management in Tourism and Hospitality
+CTH106 - Professional Development and Applied Ethics
+CWRLD - The Contemporary World
+DAFIL - Dalumat ng Filipino
+DATSCI - Data Science
+DSTRUC - Data Structures and Algorithms
+ECHE102A - Chemical Engineering Calculations 1
+ECHE103 - Organic Chemistry
+ECHE106C - Chemical Engineering Thermodynamics
+ECHE107 - Heat and Mass Transfer
+ECHE108A - Methods of Research 1
+ECHE111 - Chemical Reaction Engineering
+ECHE116C - Biochemical Engineering
+ECHE117C - Process Safety
+ECHE118 - Environmental Impact Assessment
+ECHE122C - Process Dynamics and Control
+ECON101K - History of Economic Thoughts
+ECON102K - Advanced Microeconomics
+ECON104A - Managerial Economics
+ECON104K - Project Development Management
+ECON105K - Managerial Economics
+ECON106K - Special Topics in Business Economics
+ECON107K - International Economics
+ECON501 - Economic Development
+ECONEL4 - Elective 4
+ECPE101 - Computer Engineering as Discipline
+ECPE102 - Programming Logic and Design
+ECPE201 - Computer Hardware Fundamentals for CpE
+ECPE202 - Data Structures and Algorithms
+ECPE203 - Fundamentals of Electrical Circuits for CpE (Lec)
+ECPE203L - Fundamentals of Electrical Circuits for CpE (Lab)
+ECPE204 - Fundamentals of Electronic Circuits for CpE (Lec)
+ECPE301 - Computer Engineering Drafting and Design
+ECPE302 - Data and Digital Communications
+ECPE303 - Feedback and Control Systems
+ECPE304 - Fundamentals of Mixed Signals and Sensors
+ECPE305 - Introduction to HDL
+ECPE306 - Logic Circuits and Design (Lec)
+ECPE306L - Logic Circuits and Design (Lab)
+ECPE307 - Operating Systems
+ECPE401 - Computer Architecture and Organization (Lec)
+ECPE401L - Computer Architecture and Organization (Lab)
+ECPE402 - CpE Practice and Design 1
+ECPE403 - Digital Signal Processing (Lec)
+ECPE403L - Digital Signal Processing (Lab)
+ECPE404 - Embedded Systems (Lec)
+ECPE404L - Embedded Systems (Lab)
+ECPE405 - Emerging Technologies in CpE
+EDCN101 - The Child and Adolescent Learner and Learning Principles
+EDCN102 - Facilitating Learner-Centered Teaching
+EDCN105 - Assessment in Learning 1
+EDCN106 - Teacher and the School Curriculum
+EDCN109 - Foundation of Special and Inclusive Education
+EDCN110 - Building and Enhancing New Literacies Across the Curriculum
+EDCN111 - Field Study 1 (Observations of Teaching-Learning in Actual School Environment)
+EDCN112 - Field Study 2 (Participation and Teaching Assistantship)
+EDCN113 - Teaching Internship
+EDCN114 - Intensive LET Preparatory Course 1 (General Education & Professional Education Courses)
+EDENG201 - Introduction to Linguistics
+EDENG202 - Language, Culture, and Society
+EDENG203 - Structure of English
+EDENG204 - Children and Adolescent Literature
+EDENG208 - Mythology and Folklore
+EDENG209 - Survey of Philippine Literature in English
+EDENG210 - Survey of Afro-Asian Literature
+EDENG211 - Survey of English and American Literature
+EDENG212 - Contemporary, Popular and Emergent Literature
+EDENG213 - Technical Writing
+EDENG214 - Language Learning Materials Development
+EE201 - Electrical Circuits 1(Lec)
+EE201L - Electrical Circuits 1 (Lab)
+EE301 - Electrical Machines 1 (Lec)
+EE301L - Electrical Machines 1 (Lab)
+EE304 - Fundamentals of Electronic Communication
+EE305 - Logic Circuits & Switching Theory (Lec)
+EE305L - Logic Circuits & Switching Theory (Lab)
+EE306 - Industrial Electronics (Lec)
+EE306L - Industrial Electronics (Lab)
+EE401 - Electrical Systems Design (Lec)
+EE401L - Electrical Systems Design (Lab)
+EE402 - Illumination Engineering Design
+EE403 - Power Systems Analysis (Lec)
+EE403L - Power Systems Analysis (Lab)
+EE404 - Electrical Standards and Practices
+EE405 - Research Methods for EE
+EE406 - Instrumentation and Control (Lec)
+EE406L - Instrumentation and Control (Lab)
+EECE100 - Electronics 4
+EECE101 - Practical Electronics
+EECE102 - Electronic Devices and Circuits (Lec)
+EECE102L - Electronic Devices and Circuits (Lab)
+EECE105 - Electronic Circuit Analysis and Design (Lec)
+EECE106 - Modulation and Coding Techniques (Lec)
+EECE106L - Modulation and Coding Techniques (Lab)
+EECE107 - Logic Circuits and Switching Theory (Lec)
+EECE107L - Logic Circuits and Switching Theory (Lab)
+EECE108 - Electronic System and Design (Lec)
+EECE108L - Electronic System and Design (Lab)
+EECE109 - Signals, Spectra, Signal Processing (Lec)
+EECE109L - Signals, Spectra, Signal Processing (Lab)
+EECE116 - Computer Systems Architecture (Lec)
+EECE116L - Computer Systems Architecture (Lab)
+EECE117 - Design 1/ Capstone Project 1
+EECE122 - Navigational Aids
+EECE201 - Circuits 1 (Lec)
+EECE201L - Circuits 1 (Lab)
+EED201 - Teaching English in the Elementary Grades (Language Arts)
+EED202 - Teaching of Arts in the Elementary Grades
+EED203 - Teaching PE & Health in the Elementary Grades
+EED206 - Teaching of Math in the Intermediate Grades
+EED207 - Teaching of Science in the Elementary Grades (Biology and Chemistry)
+EED208 - Teaching Social Studies in the Elementary Grades (Culture and Geography)
+EED209 - Pagtuturo ng FIlipino sa Elementarya I
+EED210 - Teaching Music in the Elementary Grades
+EED211 - Research in Education 1
+EHM201A - Bread and Pastries Production - Lecture
+EHM201L - Bread and Pastries Production - Laboratory
+EHM202A - Bar and Beverage Management - Lecture
+EHM202L - Bar and Beverage Management - Laboratory
+EIA1C - Engineering Intensive Appraisal 1 For ChE
+EIA1EC - Engineering Intensive Appraisal 1 for ECE
+EIA2EC - Engineering Intensive Appraisal 2 for ECE
+EIA3C - Engineering Intensive Appraisal 3 For ChE
+EIA3E - Engineering Intensive Appraisal 3 For EE
+EMA100 - Algebra and Trigonometry
+EMA101 - Calculus 1
+EMA102 - Calculus 2 (Integral Calculus)
+EMA103 - Differential Equations
+EMA104 - Engineering Data Analysis
+EMA301 - Numerical Methods (Lec)
+EMA301L - Numerical Methods (Lab)
+EMAT101 - Materials Engineering as a Profession
+EMAT103 - Analytical Techniques in Materials Engineering (Lecture)
+EMAT103L - Analytical Techniques in Materials Engineering (Laboratory)
+EMAT104 - Solid State Engineering
+EMAT105 - Structure-Property Relationships in Materials 2
+EMAT106 - Thermodynamics of Materials
+EMAT109 - Thermodynamics and Kinetics Lab
+EMAT110 - Polymer Materials Lec/Materials Elective 1
+EMAT110L - Polymer Materials Lab/Materials Elective 1
+EMAT111 - Synthesis and Processing of Materials
+EMAT112 - Design and Analysis of Experiments in Materials Engineering
+EMAT116 - On-the-Job Training
+EMAT117 - Forensic Engineering
+EMAT118 - Laws, Ethics, Seminars and Plant Visit (with Safety)
+EMAT1R - Methods of Research
+EMC202 - Usability, HCI and User Interaction Design
+EMC203 - Computer Graphics Programming
+EMC205 - Principles of 2D Animation
+EMC207 - Script Writing and Storyboard Design
+EMC208 - Principles of 3D Animation
+EMC209 - Design and Production Process
+EME402 - Business Process Outsourcing
+EME403 - Business Analytics
+EME404 - Project Management
+EMP303 - Lighting and Effects
+EMP305 - Modeling and Rigging
+EMP310 - Animation Design and Production
+EMP312 - Capstone 2
+EMP313 - Social Issues and Professional Practices
+ENELECT1 - Negotiation
+ENELECT2 - Events Management
+ENELECT5 - Family Business Management
+ENELECT6 - Managing a Service Enterprise
+ENSCI - Environmental Science
+ENTRP101 - Entrepreneurial Behavior
+ENTRP102 - Opportunity Seeking
+ENTRP104 - Innovation Management
+ENTRP105 - Market Research and Consumer Behavior
+ENTRP107 - Business Plan Preparation
+ENTRP108 - Financial Management
+ENTRP109 - Product Development and Market Analysis
+ENTRP111 - Programs and Policies on Enterprise Development
+ETHICS - Ethics
+ETM203A - Specialized Food and Beverage Service Operations - Lecture
+ETM203L - Specialized Food and Beverage Service Operations - Laboratory
+FDRAW - Freehand Drawing
+FILI1 - Kontekstwalisadong Komunikasyon sa Filipino
+FINMA1 - Financial Management
+FINVA100 - Financial and Investment Analysis
+FL101 - Foreign Language 1 (French)
+FTECH115 - Food Quality Assurance (Lecture)
+FTECH115L - Food Quality Assurance (Laboratory)
+FTECH117 - Food Product Development and Innovation (Lecture)
+FTECH117L - Food Product Development and Innovation (Laboratory)
+FTECH118 - Methods of Research in Food Science and Technology
+GAMEMATH - Applied Math for Games
+GBOOKS - Great Books
+GE101 - Engineering Drawing
+GE101A - Computer-Aided Drawing and Drafting
+GE102 - Engineering Mechanics
+GE102C - Engineering Mechanics w/ Strength of Materials
+GE103A - Statics & Dynamics of Rigid Bodies
+GE104A - Material Science and Engineering
+GE105 - Environmental Science and Engineering with GIS
+GE106 - Engineering Economics
+GE107 - Engineering Management
+GE107B - Engineering Management
+GE108 - Technopreneurship 101
+GE110 - Statics of Rigid Bodies
+GE112 - Mechanics of Deformable Bodies
+GE201 - Computer-Aided Drafting
+GE205 - Management of Engineering Projects
+GENSOC - GE Electives 3 (Gender and Society)
+GRPHICSD - Graphics Design
+GSR - Good Governance and Social Responsibility
+HBO - Human Behavior in an Organization
+HML207A - Rooms Division Management - Lecture
+HML207L - Rooms Division Management - Laboratory
+HML208A - Front Office Operations - Lecture
+HML208L - Front Office Operations - Laboratory
+HMP305A - Applied Business Tools and Technologies - Lecture
+HMP305L - Applied Business Tools and Technologies - Laboratory
+HMP306A - Introduction to Meetings, Incentives, Conferences & Events Management - Lecture
+HMP306L - Introduction to Meetings, Incentives, Conferences & Events Management - Laboratory
+HMP308L - Research in Hospitality - Laboratory
+HMP309 - Foreign Language 1
+HMPRAC1 - Practicum 1 (F & B Phase)
+HMPRAC2 - Practicum 2 (Hotel Phase)
+HRMGT - Human Resource Management
+HTB402 - Strategic Management in Tourism and Hospitality Industry
+HTC106 - Tourism and Hospitality Marketing
+HTC108 - Multicultural Diversity in Workplace for the Tourism Professional
+HTC109 - Professional Development and Applied Ethics
+HTC110 - Legal Aspects in Tourism and Hospitality
+IBT100 - International Business and Trade
+IDST101 - Introduction to Interdisciplinary Studies
+IDST102 - Introduction to Philosophical Perspectives
+IDST103 - Socio-Anthropology
+IDST104 - Advanced Personality Development
+IDST110 - Introduction to Web Authoring
+IDST111 - Economic Development
+IDST112 - Leadership Behavior and Organizational Development
+IDST113 - Public Relations
+IDST114 - Dynamics of Popular Culture
+IDST120 - Development Studies
+IDST121 - Social Research 2
+IDST122 - Creative Conflict Transformation
+IDST124 - Interdisciplinary Studies Internship
+IGG - Group Guidance 1
+INA1 - Intensive Nursing Appraisal 1
+INFOM1 - Information Management 1
+INFOT2 - Accounting Information System
+IRS1 - Lasallian Spirituality
+IRS3 - Spirituality in the Workplace
+IRS3E - Religions, Religious Experiences and Spirituality
+ITC104 - Introduction to Mobile Authoring
+ITL303 - Web Animation Techniques
+ITL305 - Enterprise Business Application
+ITP207 - System Integration and Architecture 1
+ITP208 - Systems Analysis and Design
+ITP212 - IT Trends
+ITP216 - Information Assurance and Security 2
+ITP217 - Capstone and Research 2
+ITP219 - Content Management Systems
+ITP220 - Systems Administration and Maintenance
+ITP221 - Internship
+LITE - Living in the IT Era
+LITEA - Living in the IT Era (For Accounting)
+LITEB - Living in the IT Era (For Business)
+LITECP - Living in IT Era (for Computing Profession)
+LITEP - Living in IT Era (for Computing Profession)
+LOGIC - Logic
+MACC102 - Performance Manangement Systems
+MACC702 - Management Accounting Research
+MACC801 - Management Accounting Internship
+MAED201 - College and Advanced Algebra
+MAED202 - Trigonometry
+MAED203 - Plane and Solid Geometry
+MAED204 - Logic and Set Theory
+MAED207 - Mathematics of Investment
+MAED208 - Number Theory
+MAED209 - Linear Algebra
+MAED210 - Advanced Statistics
+MAED211 - Calculus 2
+MAED213 - History of Math
+MATH2T - Trigonometry
+MATH3DS - Discrete Structures
+MATH4PS - Probability and Statistics
+MATHMW - Mathematics in the Modern World
+MBRES100 - Business Research (Methods, Format and Title Defense)
+MC1 - Anatomy and Physiology
+MGTSCI - Management Science
+MKEL1 - Elective 1
+MKEL2 - Elective 2
+MOBD1 - Mobile Application Development 1
+MRKT100 - Marketing Management
+MRKT101 - Professional Salesmanship
+MRKT104 - Product Management
+MRKT105 - Retail Management
+MRKT107 - Marketing Research
+MRKT205 - Services Marketing
+MRKT206 - Special Topics in Marketing Management
+NCM100A - Theoretical Foundation in Nursing
+NCM104A - Community Health Nursing 1 (Individual and Family as Clients)
+NCM104AR - Community Health Nursing 1 (Individual and Family as Clients)-RLE
+NCM105A - Nutrition and Diet Therapy
+NCM106A - Pharmacology
+NCM107A - Care of Mother, Child and Adolescent (Well Clients)
+NCM107AR - Care of Mother, Child and Adolescent (Well Clients)-RLE
+NCM108A - Health Care Ethics (Bioethics)
+NCM111A - Nursing Research 1
+NCM111AR - Nursing Research 1-RLE
+NCM112A - Care of Clients with Problems in Oxygenation, Fluid and Electrolytes, Infectious, Inflammatory and Immunologic Response, Cellular Aberrations, Acute a
+NCM112AR - Care of Clients with Problems in Oxygenation, Fluid and Electrolytes, Infectious, Inflammatory and Immunologic Response, Cellular Aberrations, Acute a
+NCM113A - Community Health Nursing 2 (Population Groups and Community as Clients)
+NCM113AR - Community Health Nursing 2 (Population Groups and Community as Clients)-RLE
+NCM118A - Nursing Care of Clients with Life Threatening Conditions, Acutely III/Multi-organ Problems, High Acuity and Emergency Situation (Acute and Chronic)
+NCM118AR - Nursing Care of Clients with Life Threatening Conditions, Acutely III/Multi-organ Problems, High Acuity and Emergency Situation (Acute and Chronic)-RL
+NCM119A - Nursing Leadership and Management
+NCM119AR - Nursing Leadership and Management-RLE
+NCM120A - Decent Work Employment and Transcultural Nursing
+NSTP1 - National Service Training Program 1
+OMTQM - Operations Management and TQM
+OOPRO - Object-Oriented Programming
+OPM101 - Environmental Mgt System
+OPM102 - Inventory Mgt & Control
+OPM106 - Productivity & Quality Tools
+OPM107 - Facilities Management
+OPM108 - Special Topics in OM
+OPMELECT4 - Elective 4 (OPM 203: Operations Research)
+OPMELECT5 - Elective 5 (OPM206: Enterprise Resource Planning)
+PATHFIT1 - Movement Competency
+PATHFIT3 - Swimming and Recreation
+PCHEM102C - Phyiscal Chemistry for Engineers 2
+PCOM - Purposive Communication
+PDESIGN - Principles of Design and Concept Art
+PHED201 - Philosophy and Socio-Anthropological Foundation of Sports
+PHED202 - Anatomy and Physiology of Human Movement
+PHED203 - Physiology of Exercise and Physical Activity
+PHED204 - Principles of Motor Control and Learning of Exercise, Sports and Dance
+PHED208 - Process of Teaching PE and Health
+PHED209 - Technology for Teaching and Learning 2
+PHED210 - Movement Education
+PHED211 - Philippine Traditional Dances
+PHED212 - International Dance and other Forms
+PHED213 - Individual and Dual Sports
+PHED214 - Team Sports
+PHM301A - Kitchen Essentials and Basic Food Preparation - Lecture
+PHM301L - Kitchen Essentials and Basic Food Preparation - Laboratory
+POSCI101 - Fundamentals of Political Science
+POSCI102 - Intro to Philippine Politics & Governance
+POSCI105 - Public Speaking and Debate
+POSCI106 - Negrense Studies
+POSCI107 - Introduction to Comparative Politics
+POSCI108 - Introduction to International Relations
+POSCI114 - Philippine Public Administration
+POSCI117 - Qualitative and Quantitative Analysis of Political Data (Thesis)
+POSCI118 - Parliamentary Rules and Procedure
+POSCI119 - Philippine Foreign Policy and Laws on Overseas Filipino Workers
+POSCI120 - Diplomatic and Consular Practices
+POSCI121 - International Political Economy
+POSCI123 - Current Issues and Trends in International Relations
+POSCI126 - Public Human Resource Management
+POSCI128 - Public Fiscal Administration
+PRGRA1 - Programming Essentials
+PRMGT100 - Project Management
+PROEL1 - Professional Elective 1
+PSLAW102 - Fundamentals of the Philippine Criminal Justice System
+PSLAW104 - Introduction to Law on Obligations and Contracts
+PSPEAK - Public Speaking
+PSTAT - Statistics for Political Science
+PSYC101 - Psychological Statistics 1 (Descriptive)
+PSYC103 - Introduction to Psychology
+PSYC104 - Physiological / Biological Psychology
+PSYC105 - Developmental Psychology
+PSYC109 - Psychological Assessment 1
+PSYC111 - Field Methods in Psychology
+PSYC112 - Filipino Psychology or Sik. Pilipino
+PSYC113 - Social Psychology
+PSYC114 - Abnormal Psychology
+PSYC116 - Research in Psychology 2
+PSYC117 - Industrial / Organizational Psychology
+PSYC201 - Psychology of Learning
+PSYC204 - Internship
+PTM302A - Applied Business Tools and Technologies - GDS - Lecture
+PTM302L - Applied Business Tools and Technologies - GDS - Laboratory
+RHIST - Readings in Philippine History
+RIZAL - Life and Works of Rizal
+SAD - Systems Analysis and Design
+SCI201A - Bio1: Cell and Molecular Biology (with Lab)
+SCI202 - Chem1: Inorganic Chemistry (with LAB)
+SCI203 - Phys1: Fluid Mechanics
+SCI206A - Bio2: Genetics (with Lab)
+SCI207 - Chem3: Organic Chemistry (with LAB)
+SCI208 - Phys3: Electricity and Magnetism (with LAB)
+SCI209 - Earth Science
+SCI210 - Environmental Science 2
+SCI211A - Meteorology
+SCI220 - Technology for Teaching and Learning 2
+SNED201 - Learners with Developmental Disabilities
+SNED202 - Learners with Sensory and Physical Disabilities
+SNED203 - Learners with Emotional, Behavioral, Language & Communication Disablities
+SNED204 - Gifted and Talented Learners
+SNED207 - Behavior Management and Modification
+SNED208 - Adapted Physical Education and Recreation, Music and Health
+SNED209 - Instructional Adaptations in Language & Literacy Instruction
+SNED210 - Instructional Adaptations in Mathematics & Science Instruction
+SNED211 - Instructional Adaptations for Teaching Content Areas (Social Sciece, Humanities)
+SNED212 - Development of Individualized Education Plans
+SNED213 - Early Childhood Inclusive Education
+SOCED201 - Foundation of Social Studies
+SOCED202 - Geography 1
+SOCED203 - Microeconomics
+SOCED207 - Socio-Cultural Anthropology
+SOCED208 - Geography 3
+SOCED209 - World History 1
+SOCED210 - Comparative Economic Planning
+SOCED211 - Comparative Government Politics
+SOCED212 - Law-Related Studies
+SOCED213 - Places and Landscape in a Changing World
+SOFENG - Software Engineering
+SSELEC202 - Property and Resources Management for Educators
+STRAT100 - Strategic Management
+STS - Science, Technology and Society
+TECHNO - Technopreneurship
+TML206 - Cruise Tourism Management
+TML207 - Airline and Airport Management
+TMP307 - Tourism Policy Planning and Development
+TMP308L - Research in Tourism - Laboratory
+TMP309 - Foreign Language 1
+TXTN1 - Income Taxation
+TXTN2 - Business Taxation and Other Taxation Topics
+USELF - Understanding the Self
+WEBD2 - Web Design and Implementation

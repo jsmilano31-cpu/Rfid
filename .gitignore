@@ -1,0 +1,35 @@
+# Local secrets and environment files
+**/.env
+**/.env.*
+!**/.env.example
+**/secrets.h
+**/google-services.json
+**/*service-account*.json
+
+# Dependencies and build/editor output
+**/node_modules/
+**/.gradle/
+**/.idea/
+**/.kotlin/
+**/build/
+**/local.properties
+**/__pycache__/
+**/*.pyc
+
+# Runtime, database, and generated local data
+.campustrack-local/data/
+.campustrack-local/downloads/
+.campustrack-local/logs/
+.campustrack-local/private/
+.campustrack-local/state/
+.campustrack-local/tools/
+**/storage/private/
+**/storage/*-backups/
+**/storage/*-rate-limits/
+**/storage/logs/*.log
+**/database/exports/*.sql
+
+# OS files and logs
+.DS_Store
+Thumbs.db
+**/*.log

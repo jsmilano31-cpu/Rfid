@@ -1,0 +1,36 @@
+<div class="audit-workspace" data-audit-workspace data-endpoint="<?= e(url('/admin/audit-trail.php')) ?>" data-entry="<?= e((int)($_GET['entry']??0)) ?>">
+<header class="page-header"><div><p class="eyebrow">Administration · accountability</p><h1>Audit Trail</h1><p>Who changed what, when it changed, and the values before and after.</p></div><button type="button" class="button button-secondary" data-audit-refresh><svg class="button-icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M16 7a6 6 0 1 0 0 6M16 3v4h-4"/></svg>Refresh history</button></header>
+<?php if (!$auditReady): ?><div class="alert alert-warning">Audit tracking setup is pending. Existing history is preserved; install the audit tracking migration to enable this workspace.</div><?php else: ?>
+<div class="audit-overview" aria-label="Audit tracking overview">
+    <article><span>Last 24 hours</span><strong><?= e($auditRecent['total']) ?></strong><small>Recorded entries</small></article>
+    <article><span>Database edits</span><strong><?= e($auditRecent['updates']??0) ?></strong><small>Last 24 hours</small></article>
+    <article><span>Database deletions</span><strong><?= e($auditRecent['deletes']??0) ?></strong><small>Last 24 hours</small></article>
+    <article><span>Tracking coverage</span><strong><?= e($auditTracked) ?> tables</strong><small>Server time · <?= e(config('app')['timezone']) ?></small></article>
+</div>
+<form class="card audit-filters" method="get" action="<?= e(url('/admin/')) ?>" data-audit-filters>
+<input type="hidden" name="page" value="audit-trail">
+<label class="field audit-search"><span>Search history</span><input type="search" name="q" value="<?= e($_GET['q']??'') ?>" maxlength="100" placeholder="Person, action, record ID, or changed value…"><small>Search names, identifiers, actions, and non-private change details.</small></label>
+<label class="field"><span>Record type</span><select name="entity" data-searchable><option value="">All types</option><?php foreach ($auditEntities as $entity): ?><option value="<?= e($entity) ?>" <?= ($_GET['entity']??'')===$entity?'selected':'' ?>><?= e(ucwords(str_replace('_',' ',$entity))) ?></option><?php endforeach; ?></select></label>
+<label class="field"><span>Actor</span><select name="actor" data-searchable><option value="">Everyone</option><option value="system" <?= ($_GET['actor']??'')==='system'?'selected':'' ?>>System / database connection</option><?php $seenActors=[];foreach ($auditActors as $actor):if (isset($seenActors[$actor['id']])) continue;$seenActors[$actor['id']]=true; ?><option value="<?= e($actor['id']) ?>" <?= (string)($_GET['actor']??'')===(string)$actor['id']?'selected':'' ?>><?= e($actor['name']) ?> · #<?= e($actor['id']) ?></option><?php endforeach; ?></select></label>
+<label class="field"><span>Action</span><select name="action" data-searchable><option value="">All actions</option><?php foreach ($auditActions as $action): ?><option value="<?= e($action) ?>" <?= ($_GET['action']??'')===$action?'selected':'' ?>><?= e(ucwords(str_replace('_',' ',$action))) ?></option><?php endforeach; ?></select></label>
+<label class="field"><span>From</span><input type="date" name="from" value="<?= e($_GET['from']??'') ?>"></label>
+<label class="field"><span>Through</span><input type="date" name="to" value="<?= e($_GET['to']??'') ?>"></label>
+<label class="field"><span>History source</span><select name="source" data-no-search><option value="">All history</option><option value="database" <?= ($_GET['source']??'')==='database'?'selected':'' ?>>Database changes</option><option value="activity" <?= ($_GET['source']??'')==='activity'?'selected':'' ?>>Application actions</option></select></label>
+<label class="field"><span>Change</span><select name="operation" data-no-search><option value="">All changes</option><?php foreach (['INSERT'=>'Created','UPDATE'=>'Updated','DELETE'=>'Deleted'] as $operation=>$label): ?><option value="<?= e($operation) ?>" <?= ($_GET['operation']??'')===$operation?'selected':'' ?>><?= e($label) ?></option><?php endforeach; ?></select></label>
+<label class="field"><span>Record ID</span><input name="record" maxlength="80" value="<?= e($_GET['record']??'') ?>" placeholder="Exact record ID"></label>
+<label class="field"><span>Entries at a time</span><select name="limit" data-no-search><?php foreach ([25,50,100] as $limit): ?><option value="<?= $limit ?>" <?= (int)($_GET['limit']??50)===$limit?'selected':'' ?>><?= $limit ?></option><?php endforeach; ?></select></label>
+<input type="hidden" name="sort" value="<?= e($_GET['sort']??'time') ?>"><input type="hidden" name="direction" value="<?= e($_GET['direction']??'desc') ?>">
+<div class="audit-filter-actions"><button type="submit" class="button button-primary">Apply filters</button><a class="button button-secondary" href="<?= e(url('/admin/?page=audit-trail')) ?>" data-audit-clear>Clear</a></div>
+</form>
+<section class="card audit-history" aria-label="Audit entries">
+<div class="audit-history-heading"><div><h2>Change history</h2><p class="muted">Select an entry to inspect its details. Database changes and application actions share a request ID.</p></div><span class="badge">Read-only</span></div>
+<div class="audit-feedback" data-audit-status role="status" aria-live="polite">Loading history…</div>
+<div class="table-wrap" data-audit-results aria-busy="true"><table data-no-datatable><thead><tr><?php foreach (['time'=>'When','actor'=>'Who','action'=>'Action','entity'=>'Record type','record'=>'Record','source'=>'Source'] as $key=>$label): ?><th scope="col"><button type="button" class="audit-sort" data-audit-sort="<?= e($key) ?>"><?= e($label) ?><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m6 8 4-4 4 4M6 12l4 4 4-4"/></svg></button></th><?php endforeach; ?><th scope="col"><span class="sr-only">Details</span></th></tr></thead><tbody data-audit-rows><tr><td colspan="7" class="empty-table-cell">Loading history…</td></tr></tbody></table></div>
+<footer class="audit-history-footer"><span class="muted" data-audit-count></span><nav aria-label="Audit history pages"><a class="button button-secondary" data-audit-previous hidden>Previous</a><a class="button button-secondary" data-audit-next hidden>Next</a></nav></footer>
+</section>
+<p class="audit-footnote muted">Tracking starts when enabled. Earlier entries contain the details recorded at the time; their before/after values cannot be reconstructed. Credentials and private message content are redacted.</p>
+<?php endif; ?>
+</div>
+<dialog class="app-dialog app-dialog-large audit-detail-dialog" data-modal data-audit-dialog aria-labelledby="audit-entry-title">
+<div class="app-dialog-shell"><header class="app-dialog-header"><div><p class="eyebrow">Audit entry</p><h2 id="audit-entry-title">Change details</h2><p class="muted" data-audit-detail-summary></p></div><button type="button" class="dialog-close" data-dialog-close aria-label="Close audit entry"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m5 5 10 10M15 5 5 15"/></svg></button></header><div class="app-dialog-body" data-audit-detail-body></div><footer class="audit-detail-footer"><a class="button button-secondary" data-audit-permalink target="_blank" rel="noopener">Open entry in new tab ↗</a><button type="button" class="button button-primary" data-dialog-close>Done</button></footer></div>
+</dialog>

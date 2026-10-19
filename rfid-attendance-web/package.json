@@ -1,0 +1,1 @@
+{"name":"campustrack-web-assets","private":true,"scripts":{"build:analytics":"esbuild scripts/analytics-charts.js --bundle --minify --format=iife --target=es2020 --outfile=public/assets/vendor/echarts/campustrack-charts.min.js --legal-comments=linked"},"dependencies":{"echarts":"6.1.0"},"devDependencies":{"esbuild":"0.28.2"}}
